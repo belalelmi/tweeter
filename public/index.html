@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -48,43 +52,49 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav id="navBar">
-      <span class="header">tweeter</span>
-
+      <span class="header"
+        ><i id="bird" class="fab fa-twitter"></i>tweeter</span
+      >
       <div id="navWrite">
-        <div>Write a new Tweet</div>
+        <div><b>Write&nbsp;</b>a new Tweet</div>
         <i id="arrows" class="fas fa-angle-double-down"></i>
       </div>
     </nav>
+    <div id="sass">
+      <header class="test" id="headers">
+        <div id="avatar">
+          <img src="/images/profile-hex.png" />
+        </div>
+        <br />
+        <div id="name">
+          <h2>MrSir</h2>
+        </div>
+      </header>
 
-    <header class="test" id="headers">
-      <div id="avatar">
-        <img src="/images/profile-hex.png" />
+      <!-- Page-specific (main) content here -->
+      <div id="mainCon">
+        <main class="container">
+          <section id="newMain" class="new-tweet">
+            <div id="errorPrompt"></div>
+            <!-- <h2>Compose Tweet</h2> -->
+            <form id="scroller" action="/tweets" method="POST">
+              <!-- <label for="tweet-text">What are you humming about?</label> -->
+              <textarea
+                name="text"
+                id="tweet-text"
+                placeholder="What are you humming about?"
+              ></textarea>
+              <div class="tweet-margin">
+                <button id="submit" type="submit">Tweet</button>
+                <output name="counter" class="counter" for="tweet-text"
+                  >140</output
+                >
+              </div>
+            </form>
+          </section>
+          <section id="tweets-container"></section>
+        </main>
       </div>
-      <br />
-      <div id="name">
-        <h2>Belal H E</h2>
-      </div>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <div id="errorPrompt"></div>
-        <!-- <h2>Compose Tweet</h2> -->
-        <form id="scroller" action="/tweets" method="POST">
-          <!-- <label for="tweet-text">What are you humming about?</label> -->
-          <textarea
-            name="text"
-            id="tweet-text"
-            placeholder="What are you humming about?"
-          ></textarea>
-          <div class="tweet-margin">
-            <button id="submit" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <section id="tweets-container"></section>
-    </main>
+    </div>
   </body>
 </html>

@@ -3,7 +3,6 @@
   top: 0;
   z-index: 1;
   color: #ffffff;
-  background-color: #253a49;
   height: 110px;
   width: 100%;
   padding-right: 1.5em;
@@ -31,9 +30,14 @@
 }
 #arrows {
   padding-left: 80px;
-  color: darkcyan;
+  color: darkgoldenrod;
   /* justify-content: flex-end; */
 }
 #arrows:hover {
+  color: darkcyan;
+}
+
+#bird {
+  padding-right: 10px;
   color: darkgoldenrod;
 }
