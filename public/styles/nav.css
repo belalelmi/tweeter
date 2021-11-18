@@ -1,0 +1,39 @@
+#navBar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: #ffffff;
+  background-color: #253a49;
+  height: 110px;
+  width: 100%;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  font-family: "Bungee";
+}
+
+.header {
+  float: left;
+  display: flex;
+  color: white;
+  padding-top: 30px;
+}
+
+/* .headers {
+  margin-top: 110px;
+} */
+#navWrite {
+  float: right;
+  padding-top: 30px;
+  display: block;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Source Sans Pro";
+}
+#arrows {
+  padding-left: 80px;
+  color: darkcyan;
+  /* justify-content: flex-end; */
+}
+#arrows:hover {
+  color: darkgoldenrod;
+}
