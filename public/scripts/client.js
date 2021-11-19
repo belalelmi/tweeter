@@ -8,20 +8,25 @@ $(document).ready(function () {
   loadTweets();
   $('#errorPrompt').hide();
 
+  $("#navWrite").on('click', () => {
+    console.log('click')
+    $("#tweet-text").focus();
+  })
+
   const renderTweets = (tweetData) => {
-    $("#tweet-container").empty();
+    $("#tweets-container").empty();
     for (let tweets of tweetData) {
       let $tweet = createTweetElement(tweets);
       $("#tweets-container").prepend($tweet);
     }
   };
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   const createTweetElement = (tweetData) => {
-    const escape = function (str) {
-      let div = document.createElement("div");
-      div.appendChild(document.createTextNode(str));
-      return div.innerHTML;
-    };
     const $tweeter = `
   <article>
 <div id="tweetDiv">
@@ -75,6 +80,7 @@ $(document).ready(function () {
         .then(() => {
           loadTweets();
           $("#tweet-text").val("");
+          $('.counter').text(140);
         });
     }
   });

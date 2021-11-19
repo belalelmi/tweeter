@@ -21,7 +21,7 @@ body {
   background-image: url("../images/45-degree-fabric-dark\ \(1\).png");
   background-attachment: fixed;
   background-position: center;
-  color: rgb(68, 46, 5);
+  color: black;
   font-size: 25px;
   font-family: "Source Sans Pro";
 }
@@ -38,19 +38,20 @@ body {
 @media (min-width: 1024px) {
   #sass {
     display: flex;
-    justify-content: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
   }
   #mainCon {
     margin-top: 5em;
   }
-  #avatar {
+  /* #avatar {
     align-self: flex-start;
     padding-left: 2em;
-  }
-  #name {
+  } */
+  /* #name {
     align-self: flex-start;
     padding-left: 5.3em;
-  }
+  } */
 
   #headers {
     margin-top: 5em;
@@ -59,9 +60,6 @@ body {
     margin-right: 30px;
   }
   #navBar {
-    position: sticky;
-    top: 0;
-    z-index: 1;
     background-color: #253a49;
   }
 }

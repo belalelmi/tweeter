@@ -1,5 +1,8 @@
 #navBar {
-  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: black;
   height: 110px;
   width: 100%;
   padding-right: 1.5em;
@@ -9,7 +12,7 @@
 .header {
   float: left;
   display: flex;
-  color: white;
+  /* color: black; */
   padding-top: 30px;
 }
 #navWrite {
@@ -30,4 +33,10 @@
 #bird {
   padding-right: 10px;
   color: darkgoldenrod;
+}
+
+@media (min-width: 1024px) {
+  #navBar {
+    color: white;
+  }
 }
