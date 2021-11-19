@@ -1,7 +1,6 @@
 button:hover {
   transform: scale(1.04, 1);
   background-color: rgb(10, 140, 226);
-  /* text-decoration: red; */
 }
 button {
   font-family: "Bungee";
@@ -12,9 +11,6 @@ form {
   display: flex;
   flex-direction: column;
 }
-/* #arraows:hover {
-  display: block;
-} */
 .tweet-margin {
   display: flex;
   justify-content: space-between;
@@ -28,7 +24,6 @@ form {
   margin-top: 10px;
 }
 #tweet-text {
-  /* margin-bottom: 10px; */
   opacity: 60%;
   border: none;
   border-bottom: 5px solid rgb(0, 0, 0);
@@ -37,8 +32,6 @@ form {
   float: right;
   padding-right: 10px;
   font-family: "Bungee";
-  /* display: flex; */
-  /* justify-content: flex-end; */
 }
 .overflow {
   color: rgb(251, 35, 35);
@@ -46,13 +39,9 @@ form {
 #tweetContainer {
   width: 40rem;
   margin: 0 auto;
-  /* margin-top: 30px; */
-  /* background-color: #fff; */
 }
-
 article:hover {
   transform: scale(1.04, 1);
-  /* background-color: rgb(10, 140, 226); */
   box-shadow: #e90b81;
 }
 article {
@@ -61,55 +50,38 @@ article {
   color: rgb(0, 0, 0);
   margin: 10px;
 }
-
 .secondHeader {
   height: 50px;
   font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-bottom: 10px; */
 }
-
 .tweetDiv {
   display: flex;
   align-items: center;
 }
-
 #uName {
   float: left;
   align-self: flex-start;
-  /* display: flex; */
-  /* align-items: flex-start; */
 }
-
 #atName {
   display: flex;
   justify-content: space-between;
-  /* float: right; */
-  /* display: flex; */
-  /* justify-self: flex-end; */
-  /* align-content: flex-end; */
-  /* flex-direction: column; */
 }
-
 #tweetBody {
   padding-top: 15px;
   margin-left: 10px;
-  /* background-color: rgba(44, 158, 187, 0.397); */
 }
-
 #tweetDiv {
   margin: 12px;
 }
-
 .divTweet {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 20px;
 }
-
 #flag:hover {
   color: goldenrod;
 }
@@ -119,7 +91,6 @@ article {
 #sendAgain:hover {
   color: rgb(23, 78, 180);
 }
-
 #errorPrompt {
   margin-bottom: 10px;
   color: red;

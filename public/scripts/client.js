@@ -48,17 +48,15 @@ $(document).ready(function () {
   </footer>
 </div>
 </article>`;
-    // console.log($tweeter)
     return $tweeter;
   };
 
   $('#scroller').on('submit', function (evt) {
     evt.preventDefault();
-    // console.log(this)
     const tweet = $("#tweet-text").val().trim().length;
 
     if (!tweet) {
-      $('#errorPrompt').text("Tweet cannot be empty.. don't be shy, we don't bite :) ");
+      $('#errorPrompt').text("Tweet cannot be empty! Don't be shy, we don't bite :) ");
       $('#errorPrompt').slideDown("slow");
       $('#errorPrompt').delay(3500).slideUp("slow");
       return;
@@ -69,18 +67,15 @@ $(document).ready(function () {
       $('#errorPrompt').delay(5000).slideUp("slow");
       return;
     } else {
-
       const val = $(this).serialize();
       $.ajax("/tweets", {
         method: "POST",
         data: val,
       })
         .then(() => {
-          // $('#errorPrompt').hide();
           loadTweets();
           $("#tweet-text").val("");
         });
     }
   });
 });
-
