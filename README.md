@@ -2,7 +2,13 @@
 
 Tweeter is a simple, yet responsive and user-friendly, single-page Twitter clone.
 
-Tweeter is built using `HTML, CSS, JS, jQuery and AJAX` for the front-end, and `Node, Express and MongoDB `for the back-end.
+Tweeter was built using `HTML, CSS, JS, jQuery and AJAX` for the front-end, and `Node, Express and MongoDB `for the back-end.
+
+## Final Project
+
+!["Desktop tweeter"](https://github.com/belalelmi/tweeter/blob/master/public/images/Screen%20Shot%202021-11-18%20at%209.01.55%20PM.png?raw=true)
+
+!["Mobile tweeter"](https://github.com/belalelmi/tweeter/blob/master/public/images/Screen%20Shot%202021-11-18%20at%209.03.04%20PM.png?raw=true)
 
 ## Getting Started
 
@@ -15,3 +21,6 @@ Tweeter is built using `HTML, CSS, JS, jQuery and AJAX` for the front-end, and `
 
 - Express
 - Node 5.10.x or above
+- Chance
+- MongoDB
+- Body-Parser
