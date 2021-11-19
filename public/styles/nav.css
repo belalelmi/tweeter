@@ -12,7 +12,6 @@
 .header {
   float: left;
   display: flex;
-  /* color: black; */
   padding-top: 30px;
 }
 #navWrite {
